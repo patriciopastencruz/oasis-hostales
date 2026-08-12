@@ -57,16 +57,22 @@ body {
 
 .hub-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto auto;
+  grid-auto-flow: column;
   gap: 1.5rem;
   width: 100%;
   max-width: 1100px;
 }
 
+@media (max-width: 860px) {
+  .hub-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .hub-item {
-  display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
+  display: contents;
 }
 
 .hub-card {
