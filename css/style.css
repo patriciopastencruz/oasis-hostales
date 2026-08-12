@@ -68,6 +68,8 @@ body {
 @media (max-width: 860px) {
   .hub-grid {
     grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-auto-flow: row;
   }
 }
 
